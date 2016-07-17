@@ -1,23 +1,20 @@
   <nav class="uk-navbar uk-margin-large-bottom">
-                <a class="uk-navbar-brand uk-hidden-small" href="index.html">primacloud</a>
+                <a class="uk-navbar-brand uk-hidden-small" href="{{ site.baseurl }}\">primacloud</a>
                 <ul class="uk-navbar-nav uk-hidden-small">
-                    <li>
-                        <a href="index.html#">Home</a>
+                    <li{% if page.url == '/' %} class="uk-active" {% endif %}>
+                        <a href="{{ site.baseurl }}\">Home</a>
                     </li>
-                    <li>
-                        <a href="index.html#1">About</a>
+                    <li{% if page.url == '/about/' %} class="uk-active" {% endif %}>
+                        <a href="{{ site.baseurl }}\about">About</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li{% if page.url == '/projects/' %} class="uk-active" {% endif %}>
+                        <a href="{{ site.baseurl }}/projects">Projects</a>
                     </li>
-                    <li>
-                        <a href="#">Blog</a>
+                    <li{% if page.url == '/blog/' %} class="uk-active" {% endif %}>
+                        <a href="{{ site.baseurl }}/blog">Blog</a>
                     </li>
-                    <li>
-                        <a href="#">Github</a>
-                    </li>
-                    <li>
-                        <a href="#">Xing</a>
+                    <li{% if page.url == '/#' %} class="uk-active" {% endif %}>
+                        <a href="{{ site.baseurl }}/#">Xing</a>
                     </li>
                 </ul>
                 <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>

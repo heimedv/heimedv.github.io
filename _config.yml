@@ -5,9 +5,13 @@ github_username: 	heimedv
 
 
 # Server
-source:	docs
+source:	.
+destination: _site
 url:	http://primacloud.com
+baseurl: ""
 
 # Settings
 markdown:	kramdown
 permalink:	pretty
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile','CNAME']
+
