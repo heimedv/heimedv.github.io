@@ -1,0 +1,13 @@
+# Meta
+title:	projectpage heimedv
+description: ""
+github_username: 	heimedv
+
+
+# Server
+source:	docs
+url:	http://primacloud.com
+
+# Settings
+markdown:	kramdown
+permalink:	pretty
